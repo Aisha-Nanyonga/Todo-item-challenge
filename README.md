@@ -1,5 +1,5 @@
 # EDU-TODO APP
-It is an item-list app where Edu students can add their tasks that they would like to accomplish for the day.
+It is an item-list app where Edu students can add tasks that they would like to accomplish for the day.
 
 # How to use App
 - Students can add tasks they would like to accomplish
