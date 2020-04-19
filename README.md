@@ -2,9 +2,9 @@
 It is an item-list app where Edu students can add tasks that they would like to accomplish for the day.
 
 # How to use App
-- Students can add tasks they would like to accomplish
-- Students can check off a task that they have accomplished
-- Students can also remove all items from the list
+- Students can add tasks they would like to accomplish 
+- Students can check off a task that they have accomplished by clicking on the done task
+- Students can also click on the close button to remove all items from the list 
 
 # Built with
 - Html
