@@ -17,30 +17,16 @@ list.addEventListener('click', function(ev) {
 }, false); 
 
 
-// Click Add button to add items to the list
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("itemBox").value;
-  var ul = document.createTextNode(inputValue);
-  li.appendChild(ul);
-  if (inputValue === '') {
-    alert("Add item first...");
-  } else {
-    document.getElementById("listitem").appendChild(li);
-  }
-  document.getElementById("itemBox").value = "";
-
-  var span = document.createElement("SPAN");
-  var ul = document.createTextNode("\u00D7");
-   span.className = "close";
-  span.appendChild(ul);
-  li.appendChild(span);
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-        var div = this.parentElement;
-        div.style.display = "none";
-    }
-  }
+function Addtoitem(event) {
+    event.preventDefault();
+    var itembox = document.getElementById("itemBox").value;
+    if (itembox === "") {
+        alert("Add item first");
+        return false;
+    }else {
+        alert("item added");
+        addedItems = document.getElementById("added-items"
+    ).innerHTML = itembox;
+    return true;
 }
-
-
+}

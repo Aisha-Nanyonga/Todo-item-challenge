@@ -10,8 +10,14 @@
 <body>
     <div class="header">
         <h2>EDU-ToDo List</h2>
-        <input type="text" id="itemBox" placeholder="Add to list">
-        <span onclick="newElement()" class="addBtn">Add</span>   
+        <form id="add-item">
+        <input type="text" id="itemBox" placeholder="Add to list"
+        onclick="Addtolist(event)">
+        <button>Add</button>
+        <div class="newitems">
+            <div id="added-items"></div>
+        </div>
+    </form>
 </div>
  <ul id="list-item">
         <li class="done">Check inbox<span class="close">x</span></li>
