@@ -65,7 +65,7 @@ input {
    font-size: 18px;
    
 }
-add {
+.addBtn {
    cursor: pointer;
    width: 25%;
    padding: 12px;
@@ -73,7 +73,7 @@ add {
    text-align: center;
    }
 
-add:hover {
+.addBtn:hover {
    background-color: lightslategrey;
 } 
 

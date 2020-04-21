@@ -17,16 +17,27 @@ list.addEventListener('click', function(ev) {
 }, false); 
 
 
-function Addtoitem(event) {
-    event.preventDefault();
-    var itembox = document.getElementById("itemBox").value;
-    if (itembox === "") {
-        alert("Add item first");
-        return false;
-    }else {
-        alert("item added");
-        addedItems = document.getElementById("added-items"
-    ).innerHTML = itembox;
-    return true;
-}
+// Click add to add item
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("itemBox").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+  alert("Add item first...");
+  } else {
+    document.getElementById("list-item").appendChild(li);
+  }
+  document.getElementById("itemBox").value = "";
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+    }
+  }
 }
